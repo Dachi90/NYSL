@@ -1,0 +1,109 @@
+body {
+
+	background-color: #BDBDBD;
+}
+
+#titulo {
+
+	font-weight: normal;
+	font-size: 350%;
+	margin-bottom: 0%;
+	margin-top: 0%;
+	color: #2E9AFE;
+}
+
+#cabecera {
+
+	width: 100%;
+	margin:0%;
+}
+
+#imagen {
+
+	width: 100%;
+	height: 300px;
+}
+
+#logo {
+
+	float: left;	
+	width: 10%;
+	height: 10%;
+}
+
+#cuerpo {
+
+	width: 70%; 
+	margin-left: 15%;	
+	padding: 0.2% 1%;
+	background-color: #D8D8D8;
+	border-radius: 5px;
+
+
+
+}
+
+#links {
+
+	position: absolute; top: 7%; left: 70%;
+
+}
+
+.subtitulos {
+
+	font-size: 150%;
+	margin-left: 3%
+
+}
+
+.fechas {
+
+	font-weight: normal;
+}
+
+
+li {
+
+	display: inline;
+	margin:10px 30px;	
+
+}
+
+.botones {
+
+	text-decoration: none;
+	color:white;
+	background-color: #2E9AFE;
+	padding: 5px 5px;
+	box-shadow: 5px 5px 1px #000000;
+}
+
+#pagina_actual {
+
+	background-color: #01DF01;	
+
+}
+
+h2 {
+
+	text-align: center;
+	color: #2E9AFE;
+}
+
+p {
+
+	margin-left: 5%;
+	margin-top: 0%;
+}
+
+h4 {
+
+	color: #2E9AFE;
+	margin-bottom: 0%;
+	/*font-size: 180%;*/
+}
+
+h2 {
+
+	margin-top: 0%;
+}

@@ -1,0 +1,93 @@
+#cabecera {
+
+	width: 100%;
+}
+
+#imagen {
+
+width: 100%;
+height: 300px; /* Me gustaria el valor de height en porcentage para que al cambiar el tamaño de la pantalla todo siga colado igual.*/ 
+margin-bottom: 0px; /* Intento eliminar el espacio entre el la imagen y el subtitulo. */
+
+}
+
+#titulo {
+	position: absolute; top: 0.5%; left: 1%;
+	font-size: 350%;
+	font-family: cursive;
+	font-weight: normal;
+	margin-top: 0px;
+
+
+}
+
+h2 {
+
+	text-align: center;
+	background-color: #01DF01;
+	margin-top: -0.5%; /* Intento eliminar el espacio entre el la imagen y el subtitulo. */
+	font-size: 200%;
+}
+
+#logo {
+
+	width: 100px;
+	height: 100px;
+	position: absolute; top: 44%; left: 80%;
+
+}
+
+#menu {
+
+	float: left;
+}
+
+#cuerpo {
+
+	margin:5% 15%;
+	font-family: cursive; 
+}
+
+.subtitulos {
+
+	font-size: 150%;
+	margin-left: 3%
+}
+
+.fechas {
+	font-weight: normal;
+}
+
+
+nav ul li {
+
+	margin: 20px 30px 80px 20px;
+	text-decoration: none;
+	list-style: none;
+	
+
+}
+
+a {
+
+	text-decoration: none;
+	color: #819FF7;
+}
+
+.pagina_actual {
+
+	color: #000000; 
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+p {
+	margin-left: 5%;
+	margin-top: 0%;
+}
+
+h4 {
+	margin-bottom: 0%;
+	/*font-size: 180%;*/
+}
+

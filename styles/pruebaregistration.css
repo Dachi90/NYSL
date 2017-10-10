@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Diplomata+SC|Gidugu|Indie+Flower|Orbitron');
+body { 
+  background: url(../img/fondo2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+h2 {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h4 ~ p {
+	/*margin: -2em 0em 0em 5em;*/
+	margin-left: 5em;
+	font-family: Bitter;
+
+}
+
+h4 {
+
+	margin:0%;
+	height: 1em; /* Tendría que buscar una mejor forma de juntar los paragrafos cno los títulos, esto me funciona, pero no creo que sea la manera correcta.*/
+}
+
+span {
+
+	font-weight: bold;
+}
+
+td:nth-child(2) {
+	padding: 0em 4em;
+}/* Estilo para conseguir el espacio que hay en pdf a seguir entre las columnas de gamesinfo.*/
+
+.menu li {
+
+	margin: 10% 0%;
+	text-align: center;
+	/* display: inline; */
+}
+.menu {
+	width: 100%;
+	list-style: none;
+	padding: 0px;
+}
+
+.menu a {
+	text-decoration: none;
+	color:#2E2E2E;
+	display: block; /* Con esta propiedad consigo que el <a> ocupe todo el <p>
+	                    asi haciendo click en cualquier sitio dentro del <p> hace 
+	                    efecto el link y no solo en el texto */
+}
+
+
+.botones {
+
+	padding: 0.3em;  /* Al poner el valor de padding en % el segunodo botón se pone en dos lineas.*/
+	border:solid;
+	border-color: #0B3B0B; 
+	border-radius: 10px;
+	
+	font-weight: bolder;
+	
+}
+
+.botones:hover {
+
+	border-color: #2E9AFE;
+	color:#0431B4;
+}
+
+.fechas {
+
+	font-family: Indie Flower;
+	font-size: 1.2em;
+}
+
+.subtitulos {
+
+	font-family: Gidugu;
+	font-size: 3em;
+}
+
+.subtitulo {
+
+	text-align: center;
+	margin: 2% 0%;
+
+}
+
+.fifa {
+	text-align: center;
+}
+
+.titulos {
+
+	font-family: Bitter;
+	font-size: 1.2em;
+}
+
+.letras {
+	list-style: lower-alpha;
+}
+
+.cuadrado {
+	list-style: square;
+}
+
+.tablas {
+	margin: 3% auto;
+}
+
+
+.fechas_tablas {
+	text-align: center;
+} 
+
+.encabezado {
+
+	margin-left: 10%;
+}
+
+.subrayado {
+
+	text-decoration: underline;
+	font-family: cursive;
+	margin-left: 10%;
+}
+.cabecera_tabla {
+	text-decoration: underline;
+	font-size: 1.2em;
+}
+
+.telefono {
+	width: 50%;
+	float: left;
+	margin-top: 0em;
+}
+
+/*.logo_fifa {
+
+  background: url(../img/logo_FIFA.png) no-repeat center center fixed; 
+  opacity: 0.8;
+} /* /* No consigo darle la opacidad al logo para que no moleste a la lectura de las reglas.*/
+
+/* 
+     Código para el efecto de acordeon.
+===============================================
+===============================================  */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #1C1C1C;
+  overflow: hidden;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background-color: rgba(239, 239, 239, 0.5);
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+  border-radius: 3%;
+  text-align: left;
+  width: 40%;
+  /*margin:0 auto;*/
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: rgba(239, 239, 239, 0.3);
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+
+
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100em;
+}
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+.tab input[type=checkbox] + label::after {
+  content: "+";
+}
+/*input[type=radio] + label::after {
+  content: "\25BC";
+}*/
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+/*input[type=radio]:checked + label::after {
+  transform: rotateX(180deg); 
+}*/
+
+/* ================================================
+   ================================================
+    Final del código para el efecto acordeon.*/
+
+/*=========Acordeon formulario ====================
+=================================================== */
+
+.accordion_form label {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.accordion_form table {
+	
+	height:auto;
+}
+.accordion_form input:checked ~ table {
+	
+	display: none;
+
+}
+
+/* ===========Final acordeon formulario =============
+===================================================== */
+
+.titulo_subrayado {
+
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.letra_pequena {
+	font-size: 0.8em;
+}
+
+.wrap_form {
+
+	min-width: 60%;
+}  
+
+
+.boton_enviar {
+
+	cursor: pointer;
+	margin-right: 2%;
+	border-radius: 20%;
+	box-shadow: 4px 4px 1px #0B3B0B;
+	background-color: #088A08;
+	margin: 1% 1%;
+}
+
+.boton_borrar {
+
+	cursor: pointer;
+	margin-right: 2%;
+	border-radius: 20%;
+	box-shadow: 4px 4px 1px #0B3B0B;
+	background-color: #B40404;
+	margin: 1% 1%;
+}
+
+.caja_botones {
+	text-align: right;
+}
+
+.separacion {
+	margin: 0.9% 0%;
+	clear: both;
+
+}
+
+.label_form {
+	font-weight: bold;
+}
+
+.input_form {
+	width: 30%;
+	background-color: rgba(216, 216, 216, 0.3);
+	margin: 0 0.5%;
+	border-bottom:2px solid #0B3B0B;
+}
+
+.input_adress {
+	width: 80%;
+	background-color: rgba(216, 216, 216, 0.3);
+	border-bottom:2px solid #0B3B0B;
+}
+
+/* =========================================
+   ====== Imagenes en los input radio ====== */
+
+.radio p {
+	
+	float:left;
+	margin-right: 1%;
+	font-weight: bold;
+}
+
+.radio input {
+
+	margin:0;padding:0;
+   /* -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;*/
+    display: none;	
+}
+
+.femele {
+	background-image:url(../img/mujer.png);
+	border-radius: 50%;
+}
+
+.male {
+	background-image: url(../img/hombre.png);
+	border-radius: 50%;
+}
+
+.gender {
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:40px;
+    height:40px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+    filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.gender:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+input:checked +.gender {
+    -webkit-filter: none;
+    -moz-filter: none;
+     filter: none;
+}
+
+/* =============================================
+   ==Final de las imágenes de los input radio==*/
+
+#titulo {
+
+	font-family: Orbitron;
+	text-align: center;
+	font-size: 250%;
+	width: 60%;
+	margin:2% auto;
+	text-shadow: 4px 4px 2px #D8D8D8;
+}
+
+#logo {
+
+	position: fixed; top: 8%; left: 85%;
+	width: 10%;
+}
+
+/*#cabecera {
+	width: 100%;
+
+}*/
+
+
+
+#links {
+	/*	width: 17%; */
+	/*margin: 0 auto;*/
+	font-family: Bitter;
+	position:fixed; top:10%; left: 0.5%;
+	border-radius: 15%;	
+	background-color: rgba(132	, 132	, 132	, 0.2);
+	
+}
+
+#cuerpo {
+
+	width: 60%;
+	margin: 0 auto;
+	border: white;
+	background-color: rgba(132, 132, 132, 0.2);
+	border-radius: 10px;
+	padding: 1em;
+	margin-top: 2%;
+}
+
+#pagina_actual {
+
+	border-color: #0040FF;
+	color:#0431B4;
+}
+
